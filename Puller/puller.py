@@ -10,9 +10,11 @@ def pull_data_and_save():
 
     if response.status_code == 200:
         data = response.json()
+
+        output_file_path = "/app/data/data.json"
         file_exists = os.path.exists("data.json")
 
-        with open("data.json", "w") as file:
+        with open(output_file_path, "w") as file:
             if file_exists:
                 file.truncate(0)  # Empty the file if it already exists
             json.dump(data, file, indent=4)

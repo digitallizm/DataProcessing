@@ -1,0 +1,14 @@
+{
+    "status": {
+        "verified": null,
+        "sentCount": 0
+    },
+    "_id": "6404aac67ef7aa816f4b0bbf",
+    "user": "640103d49444b2a501a0f012",
+    "text": "My cat sleeps 18 hours.",
+    "type": "cat",
+    "deleted": false,
+    "createdAt": "2023-03-05T14:44:22.243Z",
+    "updatedAt": "2023-03-05T14:44:22.243Z",
+    "__v": 0
+}
