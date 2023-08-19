@@ -2,7 +2,8 @@ import pandas as pd
 from pymongo import MongoClient
 
 # Load data from the JSON file
-with open("data.json", "r") as file:
+input_file_path = "/opt/data/data.json"
+with open(input_file_path, "r") as file:
     data = file.read()
 
 # Parse JSON data

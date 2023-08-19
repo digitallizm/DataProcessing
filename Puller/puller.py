@@ -11,7 +11,7 @@ def pull_data_and_save():
     if response.status_code == 200:
         data = response.json()
 
-        output_file_path = "/app/data/data.json"
+        output_file_path = "/opt/data/data.json"
         file_exists = os.path.exists("data.json")
 
         with open(output_file_path, "w") as file:
