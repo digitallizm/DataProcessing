@@ -19,7 +19,8 @@ def pull_data_and_save():
                 file.truncate(0)  # Empty the file if it already exists
             json.dump(data, file, indent=4)
 
-        print("Data pulled and saved to data.json")
+        print("Data pulled and saved to data.json:")
+        print(data)
     else:
         print("Failed to retrieve data from the API")
 

@@ -11,7 +11,8 @@ parsed_data = pd.read_json(data)
 extracted_text = parsed_data["text"]
 
 # Connect to the MongoDB instance
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient("mongodb://mongodb-container")
+# client = MongoClient("mongodb://localhost:27017/")
 db = client["Datacat"]
 collection = db["Collcat"]
 
